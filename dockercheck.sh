@@ -1,6 +1,6 @@
 #!/bin/sh
-touch /root/docker-status.log
-log=/root/docker-status.log
+touch /home/docker-status.log
+log=/home/docker-status.log
 
 cat /var/run/docker.pid &> /dev/null
 if [ $? == 0 ]; then
